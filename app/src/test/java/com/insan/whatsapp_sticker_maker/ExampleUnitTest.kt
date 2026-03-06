@@ -1,8 +1,7 @@
-package com.example.whatsapp_sticker_maker
-
-import org.junit.Test
+package com.insan.whatsapp_sticker_maker
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).

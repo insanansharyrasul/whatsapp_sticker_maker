@@ -13,7 +13,7 @@ Every feature is a **self-contained vertical slice** that owns all of its layers
 ### Top-Level Package Structure
 
 ```
-com.example.whatsapp_sticker_maker
+com.insan.whatsapp_sticker_maker
 ├── core/                        # Shared infrastructure & utilities
 │   ├── di/                      # Hilt modules for core components
 │   ├── navigation/              # NavGraph, Destinations sealed class
@@ -307,7 +307,7 @@ android {
   ```properties
   android.enableR8.fullMode=true
   ```
-- Keep rules must be **minimal and explicit** — never use `-keep class com.example.**` blanket rules.
+- Keep rules must be **minimal and explicit** — never use `-keep class com.insan.**` blanket rules.
 - Add keep rules only for classes accessed via reflection (Room, Hilt, `kotlinx.serialization`). The build system auto-generates rules for Hilt and Room; do not duplicate them.
 - Review `build/outputs/mapping/release/usage.txt` after each release build to confirm dead code is stripped.
 
